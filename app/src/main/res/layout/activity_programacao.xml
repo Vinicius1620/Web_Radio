@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/atualizacao_fundo"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Cabeçalho -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="18dp"
+        android:background="#0b2b55">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programação"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se ligue em nossa grade"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <!-- Abas dos dias -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="#0b2b69">
+
+        <LinearLayout
+            android:id="@+id/layoutDias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/btnSeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEG"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/btnTer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TER"
+                android:textColor="#aaaaaa"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/btnQua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUA"
+                android:textColor="#aaaaaa"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/btnQui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUI"
+                android:textColor="#aaaaaa"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/btnSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEX"
+                android:textColor="#aaaaaa"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/btnSab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SÁB"
+                android:textColor="#aaaaaa"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/btnDom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOM"
+                android:textColor="#aaaaaa"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Lista de programas -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fundo_p"/>
+
+</LinearLayout>

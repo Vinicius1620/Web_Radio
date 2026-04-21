@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- SafeArea É RESPONSAVEL PARA QUE O CONTEUDO NÃO FICA
+    ATRAS DAS BARRAS DE STATUS E BARRA DE NAVEGAÇÃO (BOTÕES VOLTA NA PARTE DE BAIXO)  -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/atualizacao_fundo"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:fitsSystemWindows="true">
+
+
+    <!-- Barra topo com logo da igreja -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Logo"
+        android:src="@mipmap/igreja_branco" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Logo / Ícone da Rádio -->
+    <ImageView
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_marginBottom="1dp"
+        android:src="@mipmap/icone_play" />
+
+    <!-- Nome da Rádio -->
+    <TextView
+        android:id="@+id/tvNomeRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Ouça a voz de Deus!"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_bolditalic" />
+
+    <!-- Música tocando -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="1dp"
+            android:contentDescription="Ao vivo"
+            android:src="@mipmap/transmissao_ao_vivo" />
+
+        <TextView
+            android:id="@+id/tvMusica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tocando ao vivo..."
+            android:textColor="#d9d9d9"
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+    <!-- Botões Play/Menu/Compartilhar -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Menu"
+            android:src="@mipmap/botao_menu" />
+
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Play"
+            android:src="@mipmap/botao_de_reproducao" />
+
+        <ImageButton
+            android:id="@+id/btnCompartilhar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Compartilhar"
+            android:src="@mipmap/botao_compartilhamento" />
+
+    </LinearLayout>
+
+
+    <!-- Botão Programação -->
+    <Button
+        android:id="@+id/btnProgramacao"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#f79836"
+        android:text=" Ver programação"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Redes Sociais -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/btnInstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:layout_marginEnd="12dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/icone_instagram"
+                android:contentDescription="Instagram"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icone_youtube"
+                android:contentDescription="YouTube"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Rodapé -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#44FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="© IEADERN Baraúna/RN"
+            android:textColor="#CCFFFFFF"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Desenvolvidor por:"
+            android:textColor="#CCFFFFFF"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo_irosh" />
+
+    </LinearLayout>
+
+</LinearLayout>

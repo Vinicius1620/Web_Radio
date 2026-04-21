@@ -1,0 +1,4 @@
+<resources>
+    <!-- Nome do app que aparece embaixo do ícone no celular -->
+    <string name="app_name">Web Rádio Maranata IEADERN</string>
+</resources>

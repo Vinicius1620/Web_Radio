@@ -1,7 +1,7 @@
 # 📻 Web Rádio 
 
 <p align="center">
-  <img src="screenshots/icone.png" width="120" alt="Ícone do App"/>
+  <img src="screenshotsicone.png.png" width="120" alt="Ícone do App"/>
 </p>
 
 <p align="center">
@@ -16,11 +16,11 @@
 ## 📱 Telas do Aplicativo
 
 <p align="center">
-  <img src="screenshots/tela_principal.png" width="220" alt="Tela Principal"/>
+  <img src="screenshotsela_principal.png" width="220" alt="Tela Principal"/>
   &nbsp;&nbsp;
-  <img src="screenshots/tela_programacao.png" width="220" alt="Tela de Programação"/>
+  <img src="screenshotsela_programacao.png" width="220" alt="Tela de Programação"/>
   &nbsp;&nbsp;
-  <img src="screenshots/tela_ao_vivo.png" width="220" alt="Programa Ao Vivo"/>
+  <img src="screenshotsela_ao_vivo.png" width="220" alt="Programa Ao Vivo"/>
 </p>
 
 <p align="center">

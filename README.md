@@ -16,11 +16,11 @@
 ## 📱 Telas do Aplicativo
 
 <p align="center">
-  <img src="screenshotsela_principal.png" width="220" alt="Tela Principal"/>
+  <img src="screenshotstela_principal.png.jpeg" width="220" alt="Tela Principal"/>
   &nbsp;&nbsp;
-  <img src="screenshotsela_programacao.png" width="220" alt="Tela de Programação"/>
+  <img src="screenshotstela_programacao.png.jpeg" width="220" alt="Tela de Programação"/>
   &nbsp;&nbsp;
-  <img src="screenshotsela_ao_vivo.png" width="220" alt="Programa Ao Vivo"/>
+  <img src="screenshotstela_ao_vivo.png.jpeg" width="220" alt="Programa Ao Vivo"/>
 </p>
 
 <p align="center">
